@@ -12,6 +12,9 @@ header {
     background-size: cover;
     background-position: left;
 }
+h2:hover {
+    color: #F8C471 ;
+}
 .menu {
     justify-content: space-around;
     display: flex;
@@ -225,6 +228,12 @@ div.desc {
 .imagen-formulario img {
     width: auto;
     height: 700px;
+}
+input:hover {
+    background-color: #D6EAF8 ;
+}
+input:focus {
+    background-color: #FCF3CF  ;
 }
 /* ESTILO DEL FORMULARIO DE REGISTRO TERMINA AQUI*/
 .quienessomos{
