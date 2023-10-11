@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale 1.0">
+    <title>El Bodegón</title>
+    <link rel="shortcut icon" href="./imagenes/botella-de-alcohol.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <div class="menu-logo">
+                <a href="index.html"><img src="./imagenes/logos_pequeños/el-bodegon2.jpg" alt="logo" /></a>
+            </div>
+            <div class="menu-links">
+
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="productos.html">Productos</a>
+                <a class="nav-link" href="sucursales.html">Sucursales</a>
+                <a class="nav-link" href="quienessomos.html">Quienes somos</a>
+                <a class="nav-link" href="registro.html">Registro</a>
+                <a class="nav-link" href="login.html">LogIn</a>
+                <a class="nav-link" href="contacto.html">Contacto</a>
+            </div>
+            <!-- <div>
+                <p>lorem1</p>
+            </div>-->
+            <!-- <div>
+              <input type="text">
+            </div>  -->
+        </div>
+
+        <hr>
+    </header>
+    <main>
+        <div align="center">
+            <h1>Contacto</h1>
+            <p> <b>¡Estamos encantados de escucharte! </b> </p>
+            <p> <strong>Ponte en contacto con nosotros a través del siguiente formulario o los
+                    detalles de contacto:</strong>
+            </p>
+        </div>
+
+        <!-- Formulario de contacto -->
+        <form action="show-data.html">
+            <table align="center">
+                <tr>
+                    <td align="left">
+                        <label for="nombre">Nombre:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="nombre" id="nombre" required placeholder="Ingrese su nombre aqui..."
+                            style="width: 100%;">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <label for="apellido">Apellido:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="apellido" id="apellido" required
+                            placeholder="Ingrese su apellido aqui..." style="width: 100%;">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <label for="pais">Pais:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="pais" id="pais" required style="width: 100%;">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <label for="telefono">Teléfono:</label>
+                    </td>
+                    <td>
+                        <input type="tel" name="telefono" id="telefono" pattern="[0-9]{2}-[0-9]{2}-[0-9]{6}"
+                            placeholder="12-34-567890" required style="width: 100%;">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <label for="email">Email:</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="email" required placeholder="Ingrese su mail aqui..."
+                            style="width: 100%;">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <label for="forma_contacto">¿Como desea <br> que lo contacten?</label><br>
+                    </td>
+
+
+                    <td>
+                        <input type="checkbox" name="forma_contacto" id="forma_contacto_whatsapp" value="Whatsapp">
+                        <label for="forma_contacto_whatsapp">Whatsapp</label>
+                        <input type="checkbox" name="forma_contacto" id="forma_contacto_email" value="Email"> <label
+                            for="forma_contacto_email">Email</label>
+                        <input type="checkbox" name="forma_contacto" id="forma_contacto_sms" value="SMS"> <label
+                            for="forma_contacto_sms">SMS</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" valign="top">
+                        <label for="mensaje">Mensaje:</label>
+                    </td>
+                    <td>
+                        <textarea id="mensaje" name="mensaje" cols="30" rows="10" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td></td>
+                    <td align="center">
+                        <input type="reset" value="Cancelar">
+                        <input type="submit" value="Enviar">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <!-- <form action="show-data.html">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido" required>
+            <br>
+            <label for="pais">Pais:</label>
+            <input type="text" name="pais" id="pais" required>
+            <br>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" name="telefono" id="telefono" pattern="[0-9]{2}-[0-9]{2}-[0-9]{6}"
+                placeholder="12-34-567890" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="forma_contacto">¿Como desea que lo contacten?</label><br>
+            <input type="checkbox" name="forma_contacto" id="forma_contacto_whatsapp" value="Whatsapp"> <label
+                for="forma_contacto_whatsapp">Whatsapp</label>
+            <input type="checkbox" name="forma_contacto" id="forma_contacto_email" value="Email"> <label
+                for="forma_contacto_email">Email</label>
+            <input type="checkbox" name="forma_contacto" id="forma_contacto_sms" value="SMS"> <label
+                for="forma_contacto_sms">SMS</label>
+            <br>
+            <label for="mensaje">Mensaje:</label>
+            <br>
+            <textarea id="mensaje" name="mensaje" cols="30" rows="10" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form> -->
+
+        <!-- Información de contacto -->
+        <h2>Detalles de contacto:</h2>
+        <p>Email: contacto@gmail.com</p>
+        <p>Teléfono: (123) 456-7890</p>
+    </main>
+    <div class="whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=005491124057855">
+            <img id="tel" src="./imagenes/logos_pequeños/whatsapp.png" alt="whatsapp">
+        </a>
+    </div>
+    <footer align="center">
+        <hr>
+        <p>Sitio desarrollado en Codo a Codo 2023</p>
+        <nav>
+            <a href="https://www.facebook.com/AnaMariaPolo/videos">
+                <img width="20" src="./imagenes/logos_pequeños/facebook.png" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/anapolotv/">
+                <img width="20" src="./imagenes/logos_pequeños/instagram.png" alt="instagram">
+            </a>
+            <a href="https://www.youtube.com/@CasoCerrado">
+                <img width="20" src="./imagenes/logos_pequeños/youtube.png" alt="youtube">
+            </a>
+
+        </nav>
+    </footer>
+</body>
+
+</html>

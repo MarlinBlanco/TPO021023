@@ -1,0 +1,307 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Fuggles', cursive;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-family: 'Young Serif', serif;
+}
+header {
+    background-image: url(../imagenes/alcoholic-beverage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+.menu {
+    justify-content: space-around;
+    display: flex;
+    justify-content: space-between;
+
+}
+.menu-logo img {
+    width: 300px;
+    height: 70px;
+    opacity: 1;
+}
+.menu-links {
+    margin: 10px;
+    padding: 0px;
+    display: flex;
+}
+
+/* a:link {
+    color: red;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:active {
+    background-color: green;
+    color: white;
+}
+
+p::selection {
+    background-color: salmon;
+} */
+
+.menu-links .nav-link {
+    max-height: 20px;
+    padding: 10px;
+    background-color: rgb(10, 10, 9, 1);
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid rgb(10, 10, 10);
+    margin: 5px;
+    border-radius: 5px;
+    color: white;
+}
+.nav-link:hover {
+    background-color: gray;
+    box-shadow: 0px 3px 10px 5px white;
+    color: black;
+    font-weight: bolder;
+}
+
+footer {
+    color: white;
+    text-align: center;
+
+}
+/* ESTILO DEL SLIDER-CARUSEL AUTOMATICO*/
+.carusel {
+
+    padding: 5px 20px 5px 20px;
+    margin-top: 50px;
+    background-color: rgb(23, 22, 22, 0.3);
+}
+#naranja2 {
+    width: 50%;
+    min-height: 500px;
+    background-color: rgb(5, 5, 5);
+    animation-name: carrousel;
+    animation-duration: 20s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    background-size: cover;
+    margin-left: 400px;
+}
+@keyframes carrousel {
+    0% {
+        background-image: url(../imagenes/fondos/251677.jpg);
+    }
+    20% {
+        background-image: url(../imagenes/fondos/wallpaper\ 5\ grados\ pc.png);
+    }
+    40% {
+        background-image: url(../imagenes/fondos/251716.jpg);
+    }
+    60% {
+        background-image: url(../imagenes/fondos/ron-un-buen-trago_0.jpg);
+    }
+    80% {
+        background-image: url(../imagenes/fondos/3a3f0efbec67c7125221821bd94f3c68.jpeg);
+    }
+    100% {
+        background-image: url(../imagenes/fondos/cerveza.jpg);
+    }
+}
+/* ESTILO DEL SLIDER-CARUSEL AUTOMATICO TERMINA AQUI*/
+/* ESTILO DEL SLIDER MANUAL*/
+.container {
+    margin: auto;
+    background-color: rgb(5, 5, 5);
+    width: 800px;
+    padding: 10px;
+}
+ul,li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul.slider {
+    position: relative;
+    width: 800px;
+    height: 300px;
+    
+}
+ul.slider li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    background-color: rgb(8, 8, 6);
+    transition: opacity .5s;
+}
+ul.slider li img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+ul.slider li:first-child {
+    opacity: 1;
+}
+ul.slider li:target {
+    opacity: 1;
+}
+.menu-slider {
+    text-align: center;
+    margin: 20px;
+}
+.menu-slider li {
+    display: inline-block;
+    text-align: center;
+}
+.menu-slider li a {
+    display: inline-block;
+    color: rgb(251, 250, 250);
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+/* ESTILO DEL SLIDER MANUAL TERMINA AQUI*/
+
+/* ESTILO DE LAS CARDS SOBRE EL FOOTER*/
+.img-footer {
+    display: flex;
+    justify-content: space-around;
+
+}
+div.gallery {
+    margin: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    display: inline-block;
+    justify-content: space-around;
+}
+div.gallery:hover {
+    border: 1px solid #777;
+}
+div.gallery img {
+    width: 100%;
+    height: 300px;
+}
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 800;
+    color: white;
+}
+/* ESTILO DE LAS CARDS SOBRE EL FOOTER TERMINA AQUI*/
+
+/* ESTILO DEL WHATSAPP ICONO*/
+#tel {
+    width: 60px;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+}
+#tel:hover {
+    animation: bounce;
+    animation-duration: 2s;
+}
+/* ESTILO DEL WHATSAPP ICONO TERMINA AQUI*/
+
+/* ESTILO DEL FORMULARIO DE REGISTRO*/
+.division-formulario {
+    background-color: rgba(23, 22, 22, 0.3);
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 80px;
+}
+.imagen-formulario {
+    text-align: end;
+    width: 40%;
+    height: fit-content;
+}
+.imagen-formulario img {
+    width: auto;
+    height: 700px;
+}
+/* ESTILO DEL FORMULARIO DE REGISTRO TERMINA AQUI*/
+.quienessomos{
+    text-align: justify;
+    background-color:  rgba(23, 22, 22, 0.3);
+    /* height: 700px; */
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 80px;
+}
+section{
+    width: 70%;
+    padding: 20px;
+}
+section h2{
+    text-align: center;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+}
+.card{
+    width: 15%;
+    min-width: 300px;
+
+    border: 2px solid red; 
+    border-radius: 30px  0px 30px 0px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(173, 0, 0, 0.573);
+    box-shadow: 0px 3px 10px 5px rgba(173, 0, 0, 1);
+    font-weight: bolder;
+    margin: 20px;
+    display: flex;
+    
+}
+.card img{
+    width: 150px;
+}
+
+.boton-producto{
+    background-color: rgb(0, 106, 245);
+    color: rgb(221, 221, 221);
+    border:  2px solid rgb(55, 0, 255); ;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    padding: 3px;
+    font-weight: normal;
+    
+
+
+}
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #0d6efd;
+    --bs-btn-border-color: #0d6efd;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #0b5ed7;
+    --bs-btn-hover-border-color: #0a58ca;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #0a58ca;
+    --bs-btn-active-border-color: #0a53be;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #0d6efd;
+    --bs-btn-disabled-border-color: #0d6efd;
+}
+#contenedorP{
+    /*height: 1200px;*/
+    display: flex;
+    flex-direction: row;   /* column , row-reverse,  col-reverse*/
+    flex-wrap: wrap;  /* nowrap wrap wrap-reverse*/
+    justify-content: space-around ; /* center flex-start flex-end space-between (entre) space-around (alrededor)*/
+    align-content: space-around;  /* center flex-end flex-start space-around space-between*/
+}
