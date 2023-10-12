@@ -127,7 +127,7 @@ ul.slider {
     position: relative;
     width: 800px;
     height: 300px;
-    
+
 }
 ul.slider li {
     position: absolute;
@@ -173,18 +173,39 @@ ul.slider li:target {
 
 /* ESTILO DE LAS CARDS SOBRE EL FOOTER*/
 .img-footer {
+    height: 380px;
     display: flex;
     justify-content: space-around;
-
+    margin: 5px;
+    padding: 5px;
+   
 }
 div.gallery {
-    margin: 5px;
+    margin: 7px;
     border: 2px solid rgb(255, 255, 255);
     display: inline-block;
     justify-content: space-around;
+   
 }
 div.gallery:hover {
-    border: 1px solid #777;
+    border: 2px solid #f4a52e;
+    animation: pulse-orange-outside 2s ;
+}
+@keyframes pulse-orange-outside {
+	0% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgb(255, 121, 63, 0.7);
+	}
+	
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 50px rgba(255, 121, 63, 0);
+	}
+	
+	100% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(255, 121, 63, 0);
+	}
 }
 div.gallery img {
     width: 100%;
@@ -200,15 +221,59 @@ div.desc {
 /* ESTILO DE LAS CARDS SOBRE EL FOOTER TERMINA AQUI*/
 
 /* ESTILO DEL WHATSAPP ICONO*/
+
 #tel {
-    width: 60px;
-    position: fixed;
-    bottom: 100px;
-    right: 100px;
+     width: 60px;
 }
-#tel:hover {
-    animation: bounce;
-    animation-duration: 2s;
+.whatsapp {
+    background: rgba(51, 217, 178, 0.3);
+    border-radius: 50%;
+	box-shadow: 0 0 0 0 rgba(51, 217, 178, 1);
+	animation: pulse-green 2s infinite;
+	width: 50px;
+	height: 50px;
+	align-items: center;
+    display: flex;
+    justify-content: center;
+    position: fixed; 
+    bottom: 100px;
+    right: 100px; 
+}
+@keyframes pulse-green {
+	0% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(51, 217, 178, 0.7);
+	}
+	
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 50px rgba(51, 217, 178, 0);
+	}
+	
+	100% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(51, 217, 178, 0);
+	}
+}
+.whatsapp:hover {
+    background: rgba(255, 121, 63, 1);
+	animation: pulse-orange 2s infinite;
+}
+@keyframes pulse-orange {
+	0% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgb(255, 121, 63, 0.7);
+	}
+	
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 50px rgba(255, 121, 63, 0);
+	}
+	
+	100% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(255, 121, 63, 0.7);
+	}
 }
 /* ESTILO DEL WHATSAPP ICONO TERMINA AQUI*/
 
@@ -252,6 +317,7 @@ section h2{
     text-align: center;
 }
 
+/*ESTILO DE PAGINA PRODUCTOS*/
 .productos {
     display: flex;
     flex-wrap: wrap;
@@ -261,8 +327,7 @@ section h2{
 .card{
     width: 15%;
     min-width: 300px;
-
-    border: 2px solid red; 
+    border: 2px solid red;
     border-radius: 30px  0px 30px 0px;
     text-align: center;
     padding: 10px;
@@ -271,12 +336,33 @@ section h2{
     font-weight: bolder;
     margin: 20px;
     display: flex;
-    
+
 }
 .card img{
     width: 150px;
 }
 
+div.card:hover {
+    border: 5px solid #f4a52e;
+    
+
+}
+@keyframes pulse-red-outside {
+	0% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgb(255, 82, 82, 0.7);
+	}
+	
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 50px rgba(255, 82, 82, 0);
+	}
+	
+	100% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+	}
+}
 .boton-producto{
     background-color: rgb(0, 106, 245);
     color: rgb(221, 221, 221);
@@ -286,11 +372,11 @@ section h2{
     text-decoration: none;
     padding: 3px;
     font-weight: normal;
-    
+
 
 
 }
-.btn-primary {
+/* .btn-primary {
     --bs-btn-color: #fff;
     --bs-btn-bg: #0d6efd;
     --bs-btn-border-color: #0d6efd;
@@ -305,7 +391,7 @@ section h2{
     --bs-btn-disabled-color: #fff;
     --bs-btn-disabled-bg: #0d6efd;
     --bs-btn-disabled-border-color: #0d6efd;
-}
+} */
 #contenedorP{
     /*height: 1200px;*/
     display: flex;
