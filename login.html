@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Sedgwick+Ave+Display&family=Young+Serif&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fuggles&family=Sedgwick+Ave+Display&family=Young+Serif&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -41,28 +43,34 @@
 
         <hr>
     </header>
-    <main align="center">
-        <h2>Log In</h2>
-        <form>
-
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" required placeholder="Ingrese su mail aqui...">
-            <br>
-            <br>
-            <label for="clave">Clave:</label>
-            <input type="password" name="clave" id="clave" required>
-            <br>
-            <br>
-            <input type="submit" value="Enviar">
-        </form>
-
+    <main>
+        <div class="paginalogin">
+            <div class="login">
+                <img src="./imagenes/logos_pequeños/acceso.png" alt="acceso">
+                <h2>Inicia sesión ahora</h2>
+                <form class="form-login">
+                    <label for="usuario">Usuario</label>
+                    <input class="form-input" type="usuario" name="usuario" id="usuario" required
+                        placeholder="Ingrese su nombre de usuario o email">
+                    <br>
+                    <label for="password">Contraseña</label>
+                    <input class="form-input" type="password" name="password" id="password" required
+                        placeholder="Ingrese su contraseña">
+                    <br>
+                    <input class="boton-acceso" type="submit" value="ACCESO">
+                </form>
+            </div>
+            <div class="picture">
+                <img src="./imagenes/fondos/jack_danielsp1jpg.jpg" alt="fondo-login">
+            </div>
+        </div>
     </main>
     <div class="whatsapp">
         <a href="https://api.whatsapp.com/send?phone=005491111111111">
             <img id="tel" src="./imagenes/logos_pequeños/whatsapp.png" alt="whatsapp">
         </a>
     </div>
-    <footer align="center">
+    <footer>
         <hr>
         <p>Sitio desarrollado en Codo a Codo 2023</p>
         <nav>
@@ -70,10 +78,10 @@
                 <img src="./imagenes/logos_pequeños/facebook.png" alt="facebook">
             </a>
             <a href="https://www.instagram.com">
-                <img  src="./imagenes/logos_pequeños/instagram.png" alt="instagram">
+                <img src="./imagenes/logos_pequeños/instagram.png" alt="instagram">
             </a>
             <a href="https://www.youtube.com">
-                <img  src="./imagenes/logos_pequeños/youtube.png" alt="youtube">
+                <img src="./imagenes/logos_pequeños/youtube.png" alt="youtube">
             </a>
 
         </nav>

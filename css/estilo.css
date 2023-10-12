@@ -1,9 +1,6 @@
 body {
     background-color: rgb(0, 0, 0);
     color: white;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    font-family: 'Fuggles', cursive;
-    font-family: 'Sedgwick Ave Display', cursive;
     font-family: 'Young Serif', serif;
 }
 
@@ -18,7 +15,6 @@ header {
     justify-content: space-around;
     display: flex;
     justify-content: space-between;
-
 }
 .menu-logo img {
     width: 300px;
@@ -49,7 +45,7 @@ header {
 }
 .nav-link:visited {
     color: wheat;
-} 
+}
 .nav-link:active {
     background-color: rgb(10, 10, 10, 0.8);
 }
@@ -58,13 +54,12 @@ h2:hover {
 }
 p::selection {
     background-color: rgb(39, 36, 34);
-} 
+}
 
 /* ESTILO DEL FOOTER*/
 footer {
     color: white;
     text-align: center;
-
 }
 footer img {
     width: 30px;
@@ -75,21 +70,21 @@ div.carusel {
     padding: 5px;
     margin: 50px auto ;
     background-color: rgba(23, 22, 22, 0.3);
-    display: flex; 
+    display: flex;
     justify-content: center;
 }
 #naranja2 {
     width: 50%;
     min-height: 500px;
-    background-color: rgb(5, 5, 5); 
+    background-color: rgb(5, 5, 5);
     animation-name: carrousel;
     animation-duration: 20s;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
     background-size: cover;
-    background-size: 100% 100%; 
+    background-size: 100% 100%;
     background-repeat: no-repeat;
- 
+
 }
 @keyframes carrousel {
     0% {
@@ -207,12 +202,12 @@ div.gallery:hover {
 		transform: scale(1);
 		box-shadow: 0 0 0 0 rgb(255, 121, 63, 0.7);
 	}
-	
+
 	70% {
 		transform: scale(1);
 		box-shadow: 0 0 0 50px rgba(255, 121, 63, 0);
 	}
-	
+
 	100% {
 		transform: scale(1);
 		box-shadow: 0 0 0 0 rgba(255, 121, 63, 0);
@@ -245,21 +240,21 @@ div.nombreproducto {
 	align-items: center;
     display: flex;
     justify-content: center;
-    position: fixed; 
-    bottom: 100px;
-    right: 100px; 
+    position: fixed;
+    bottom: 60px;
+    right: 70px;
 }
 @keyframes pulse-green {
 	0% {
 		transform: scale(1);
 		box-shadow: 0 0 0 0 rgba(51, 217, 178, 0.7);
 	}
-	
+
 	70% {
 		transform: scale(1);
 		box-shadow: 0 0 0 50px rgba(51, 217, 178, 0);
 	}
-	
+
 	100% {
 		transform: scale(1);
 		box-shadow: 0 0 0 0 rgba(51, 217, 178, 0);
@@ -274,12 +269,12 @@ div.nombreproducto {
 		transform: scale(1);
 		box-shadow: 0 0 0 0 rgb(255, 121, 63, 0.7);
 	}
-	
+
 	70% {
 		transform: scale(1);
 		box-shadow: 0 0 0 50px rgba(255, 121, 63, 0);
 	}
-	
+
 	100% {
 		transform: scale(1);
 		box-shadow: 0 0 0 0 rgba(255, 121, 63, 0.7);
@@ -360,12 +355,12 @@ div.card:hover {
 		transform: scale(1);
 		box-shadow: 0 0 0 0 rgb(255, 82, 82, 0.7);
 	}
-	
+
 	70% {
 		transform: scale(1);
 		box-shadow: 0 0 0 50px rgba(255, 82, 82, 0);
 	}
-	
+
 	100% {
 		transform: scale(1);
 		box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
@@ -407,4 +402,87 @@ div.card:hover {
     flex-wrap: wrap;  /* nowrap wrap wrap-reverse*/
     justify-content: space-around ; /* center flex-start flex-end space-between (entre) space-around (alrededor)*/
     align-content: space-around;  /* center flex-end flex-start space-around space-between*/
+}
+/*ESTILO DE PAGINA SUCURSALES*/
+.sucursales{
+    width: 100%;
+    display: inline-flex;
+    text-align: center;
+    margin: 10px 0px;
+}
+.sucursales img{
+    width: 500px ;
+    height: 400px;
+}
+.sucursales iframe {
+    width: 500px ;
+    height: 400px;
+}
+.sucursales p{
+    font-style: normal;
+}
+/*ESTILO DE PAGINA LOGIN*/
+.login{
+    background-color: rgb(22, 23, 23, 0.8);
+    border-radius: 30px;
+    width: 30%;
+    height: 630px;
+    display: block;
+    text-align: center;
+    padding: 30px;
+    margin: 5px 15px;
+}
+.login img {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(164, 160, 160, 0.8);
+    border-radius: 50px;
+    margin: 10px;
+}
+.login .form-login{
+    background-color: black;
+    margin: 40px 5px;
+    padding: 30px;
+    height: 50%;
+    display: grid;
+    border-radius: 25px;
+    font-size: 20px;
+    text-align: left;
+}
+.login .form-input {
+    height: 50px;
+    border-radius: 32px;
+    text-align: center;
+    font-size: 17px;
+    margin: 5px;
+    font-family: 'Young Serif', serif;
+}
+.login .boton-acceso {
+    height: 50px;
+    border-radius: 32px;
+    font-weight: bold;
+    font-family: 'Young Serif', serif;
+    background-color: rgb(234, 186, 81);
+}
+.login .boton-acceso:hover{
+    background-color: #f4a52e;
+}
+.paginalogin{
+    width: 100%;
+    height: 680px;
+    display: inline-flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-end;
+}
+.paginalogin .picture{
+    width: 40%;
+    height: 670px;
+    margin-right: 50px;
+    background-color: black;
+}
+.paginalogin .picture img{
+    width: 100%;
+    height: 660px;
 }
