@@ -19,29 +19,33 @@
 <body>
 
     <header>
-        <div class="menu">
+        <!--<div class="menu">-->
             <div class="menu-logo">
                 <a href="index.html"><img src="./imagenes/logos_pequeños/el-bodegon2.jpg" alt="logo" /></a>
             </div>
-            <div class="menu-links">
+            <button class="abrir-menu" id="abrir"><img src="imagenes/logos_pequeños/menu.png" alt=""></button>
+            <nav class="nav" id="nav">
+                <button class="cerrar-menu" id="cerrar"><img src="imagenes/logos_pequeños/cerrar.png" alt=""></button>
+                <ul class="nav-list">
+                    <li><a  href="index.html">Home</a></li>
+                    <li><a  href="productos.html">Productos</a></li>
+                    <li><a  href="sucursales.html">Sucursales</a></li>
+                    <li><a  href="quienessomos.html">Quienes somos</a></li>
+                    <li><a  href="registro.html">Registro</a></li>
+                    <li><a  href="login.html">LogIn</a></li>
+                    <li><a  href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
 
-                <a class="nav-link" href="index.html">Home</a>
-                <a class="nav-link" href="productos.html">Productos</a>
-                <a class="nav-link" href="sucursales.html">Sucursales</a>
-                <a class="nav-link" href="quienessomos.html">Quienes somos</a>
-                <a class="nav-link" href="registro.html">Registro</a>
-                <a class="nav-link" href="login.html">LogIn</a>
-                <a class="nav-link" href="contacto.html">Contacto</a>
-            </div>
             <!-- <div>
                 <p>lorem1</p>
             </div>-->
             <!-- <div>
               <input type="text">
             </div>  -->
-        </div>
+        
 
-        <hr>
+        
     </header>
 
     <main>
@@ -156,6 +160,8 @@
             </a>
         </nav>
     </footer>
+    <script src="js/main.js"></script>
+    <script src="js/encabezado.js"></script>
 </body>
 
 </html>
