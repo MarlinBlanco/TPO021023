@@ -265,7 +265,7 @@ div.nombreproducto {
     position: fixed;
     bottom: 60px;
     right: 70px;
-}/*
+}
 @keyframes pulse-green {
 	0% {
 		transform: scale(1);
@@ -281,7 +281,7 @@ div.nombreproducto {
 		transform: scale(1);
 		box-shadow: 0 0 0 0 rgba(51, 217, 178, 0);
 	}
-}*/
+}
 .whatsapp:hover {
     background: rgba(255, 121, 63, 1);
 	animation: pulse-orange 2s infinite;
