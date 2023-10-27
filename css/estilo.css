@@ -194,6 +194,7 @@ ul.slider li:target {
 .productos-destacados {
     height: 380px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 50px auto;
     padding: 5px;
@@ -203,11 +204,19 @@ div.gallery {
     margin: 7px;
     border: 2px solid rgb(255, 255, 255);
     width: 15%;
+    text-align: center;
     padding: 0px;
+    
 }
 div.gallery:hover {
     border: 2px solid #f4a52e;
     animation: pulse-orange-outside 2s ;
+}
+
+@media (max-width: 900px){
+    .productos-destacados{
+        flex-direction: column;
+    }
 }
 
 @keyframes pulse-orange-outside {
