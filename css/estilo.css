@@ -34,13 +34,13 @@ header {
     padding: 0px;
     display: flex;
 }
-.menu-links .nav-link {
-    
-    
+.menu-links .nav-link {    
     max-height: 20px;
     padding: 10px;
     background-color: rgb(10, 10, 9, 1);
     text-decoration: none;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
     text-align: center;
     border: 1px solid rgb(10, 10, 10);
     margin: 5px;
@@ -521,8 +521,6 @@ div.card:hover {
 .nav-list{
     list-style-type: none;
     display: flex;
-    gap: 2rem;
-
 }
 .nav-list li a{
     text-decoration: none;
@@ -536,7 +534,7 @@ div.card:hover {
 
 /*MENU RESPONSIVO*/
 
-@media screen and (max-width: 1000px ) {
+@media screen and (max-width: 1100px ) {
     .abrir-menu, .cerrar-menu{
         display: block;
         border: 0;
@@ -571,8 +569,8 @@ div.card:hover {
 
     .nav-list{
         flex-direction: column;
-        align-items: end;
-
+        align-items: center;
+        gap: 2rem;
     }
     .nav-list li a{
         color: #D6EAF8;
