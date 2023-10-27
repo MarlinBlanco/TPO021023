@@ -18,31 +18,26 @@
 </head>
 
 <body>
+
     <header>
-        <div class="menu">
-            <div class="menu-logo">
-                <a href="index.html"><img src="./imagenes/logos_pequeños/el-bodegon2.jpg" alt="logo" /></a>
-            </div>
-            <div class="menu-links">
-
-                <a class="nav-link" href="index.html">Home</a>
-                <a class="nav-link" href="productos.html">Productos</a>
-                <a class="nav-link" href="sucursales.html">Sucursales</a>
-                <a class="nav-link" href="quienessomos.html">Quienes somos</a>
-                <a class="nav-link" href="registro.html">Registro</a>
-                <a class="nav-link" href="login.html">LogIn</a>
-                <a class="nav-link" href="contacto.html">Contacto</a>
-            </div>
-            <!-- <div>
-                <p>lorem1</p>
-            </div>-->
-            <!-- <div>
-              <input type="text">
-            </div>  -->
+        <div class="menu-logo">
+            <a href="index.html"><img src="./imagenes/logos_pequeños/el-bodegon2.jpg" alt="logo" /></a>
         </div>
-
-        <hr>
+        <button class="abrir-menu" id="abrir"><img src="imagenes/logos_pequeños/menu.png" alt=""></button>
+        <nav class="nav menu-links " id="nav">
+            <button class="cerrar-menu" id="cerrar"><img src="imagenes/logos_pequeños/cerrar.png" alt=""></button>
+            <ul class="nav-list">
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="productos.html">Productos</a></li>
+                <li><a class="nav-link" href="sucursales.html">Sucursales</a></li>
+                <li><a class="nav-link" href="quienessomos.html">Quienes somos</a></li>
+                <li><a class="nav-link" href="registro.html">Registro</a></li>
+                <li><a class="nav-link" href="login.html">LogIn</a></li>
+                <li><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
         <div align="center">
             <h2>Contacto</h2>
@@ -133,38 +128,6 @@
             </table>
         </form>
 
-        <!-- <form action="show-data.html">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <br>
-            <label for="apellido">Apellido:</label>
-            <input type="text" name="apellido" id="apellido" required>
-            <br>
-            <label for="pais">Pais:</label>
-            <input type="text" name="pais" id="pais" required>
-            <br>
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" name="telefono" id="telefono" pattern="[0-9]{2}-[0-9]{2}-[0-9]{6}"
-                placeholder="12-34-567890" required>
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br>
-            <label for="forma_contacto">¿Como desea que lo contacten?</label><br>
-            <input type="checkbox" name="forma_contacto" id="forma_contacto_whatsapp" value="Whatsapp"> <label
-                for="forma_contacto_whatsapp">Whatsapp</label>
-            <input type="checkbox" name="forma_contacto" id="forma_contacto_email" value="Email"> <label
-                for="forma_contacto_email">Email</label>
-            <input type="checkbox" name="forma_contacto" id="forma_contacto_sms" value="SMS"> <label
-                for="forma_contacto_sms">SMS</label>
-            <br>
-            <label for="mensaje">Mensaje:</label>
-            <br>
-            <textarea id="mensaje" name="mensaje" cols="30" rows="10" required></textarea>
-
-            <input type="submit" value="Enviar">
-        </form> -->
-
         <!-- Información de contacto -->
         <h2>Detalles de contacto:</h2>
         <p>Email: contacto@gmail.com</p>
@@ -190,9 +153,10 @@
             <a href="https://www.youtube.com">
                 <img src="./imagenes/logos_pequeños/youtube.png" alt="youtube">
             </a>
-
         </nav>
     </footer>
+    <script src="js/main.js"></script>
+    <script src="js/encabezado.js"></script>
 </body>
 
 </html>

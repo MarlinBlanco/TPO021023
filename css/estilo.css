@@ -75,8 +75,8 @@ footer img {
     width: 30px;
 }
 
-/* ESTILO DEL SLIDER-CARUSEL AUTOMATICO*/
-div.carusel {
+/* ESTILO DEL SLIDER-CARROUSEL AUTOMATICO*/
+div.carrousel {
     padding: 5px;
     margin: 50px auto ;
     background-color: rgba(23, 22, 22, 0.3);
@@ -497,6 +497,7 @@ div.card:hover {
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: flex-end;
+    margin: 20px;
 }
 .paginalogin .picture{
     width: 40%;
