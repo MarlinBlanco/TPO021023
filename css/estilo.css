@@ -2,35 +2,45 @@ body {
     background-color: rgb(0, 0, 0);
     color: white;
     font-family: 'Young Serif', serif;
+    box-sizing: border-box;
+    
 }
 
 /* ESTILO DEL HEADER-MENU*/
 header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
     background-image: url(../imagenes/alcoholic-beverage.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
 }
 .menu {
-    justify-content: space-around;
+    
     display: flex;
     justify-content: space-between;
 }
 .menu-logo img {
+    
     width: 300px;
     height: 70px;
     opacity: 1;
+    
 }
 .menu-links {
     margin: 10px;
     padding: 0px;
     display: flex;
 }
-.menu-links .nav-link {
+.menu-links .nav-link {    
     max-height: 20px;
     padding: 10px;
     background-color: rgb(10, 10, 9, 1);
     text-decoration: none;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
     text-align: center;
     border: 1px solid rgb(10, 10, 10);
     margin: 5px;
@@ -86,6 +96,7 @@ div.carusel {
     background-repeat: no-repeat;
 
 }
+
 @keyframes carrousel {
     0% {
         background-image: url(../imagenes/fondos/fondojacksdaniel.jpg);
@@ -106,6 +117,7 @@ div.carusel {
         background-image: url(../imagenes/fondos/fondocervezaspolar.jpg);
     }
 }
+
 /* ESTILO DEL SLIDER-CARUSEL AUTOMATICO TERMINA AQUI*/
 
 /* ESTILO DEL BANNER*/
@@ -182,6 +194,7 @@ ul.slider li:target {
 .productos-destacados {
     height: 380px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 50px auto;
     padding: 5px;
@@ -191,12 +204,21 @@ div.gallery {
     margin: 7px;
     border: 2px solid rgb(255, 255, 255);
     width: 15%;
+    text-align: center;
     padding: 0px;
+    
 }
 div.gallery:hover {
     border: 2px solid #f4a52e;
     animation: pulse-orange-outside 2s ;
 }
+
+@media (max-width: 900px){
+    .productos-destacados{
+        flex-direction: column;
+    }
+}
+
 @keyframes pulse-orange-outside {
 	0% {
 		transform: scale(1);
@@ -485,4 +507,72 @@ div.card:hover {
 .paginalogin .picture img{
     width: 100%;
     height: 660px;
+}
+
+.abrir-menu{
+    display: none;
+    
+}
+
+.cerrar-menu{
+    display: none;
+}
+
+.nav-list{
+    list-style-type: none;
+    display: flex;
+}
+.nav-list li a{
+    text-decoration: none;
+    padding: 5px;
+    background-color: rgb(10, 10, 9, 1);
+    border: 1px solid rgb(10, 10, 10);
+    border-radius: 5px;
+    color: white;
+
+}
+
+/*MENU RESPONSIVO*/
+
+@media screen and (max-width: 1100px ) {
+    .abrir-menu, .cerrar-menu{
+        display: block;
+        border: 0;
+        cursor: pointer;
+    }
+    
+    
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .nav{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.897);
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(41, 41, 44, 0.603);
+        
+    }
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .nav-list li a{
+        color: #D6EAF8;
+    }
 }
