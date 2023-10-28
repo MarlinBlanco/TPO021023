@@ -192,18 +192,20 @@ ul.slider li:target {
 
 /* ESTILO DE LAS CARDS SOBRE EL FOOTER*/
 .productos-destacados {
-    height: 380px;
+    /* height: 380px; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 50px auto;
     padding: 5px;
     background-color: rgb(23, 22, 22, 0.3);
+   
 }
 div.gallery {
     margin: 7px;
     border: 2px solid rgb(255, 255, 255);
-    width: 15%;
+    width: 15rem;
+    min-width: 15rem;
     text-align: center;
     padding: 0px;
     
@@ -213,11 +215,11 @@ div.gallery:hover {
     animation: pulse-orange-outside 2s ;
 }
 
-@media (max-width: 900px){
+/* @media (max-width: 900px){
     .productos-destacados{
         flex-direction: column;
     }
-}
+} */
 
 @keyframes pulse-orange-outside {
 	0% {
@@ -333,16 +335,16 @@ input:focus {
 .quienessomos{
     text-align: justify;
     background-color:  rgba(23, 22, 22, 0.3);
-    /* height: 700px; */
+/* height: 700px; */
     display: flex;
     justify-content: space-between;
     margin: 50px 80px;
 }
-section{
+.quienessomos section{
     width: 70%;
     padding: 20px;
 }
-section h2{
+.quienessomos section h2{
     text-align: center;
 }
 
@@ -350,7 +352,7 @@ section h2{
 .productos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 30px;
 }
 .card{
@@ -397,38 +399,22 @@ div.card:hover {
     text-decoration: none;
     padding: 3px;
     font-weight: normal;
-
-
-
 }
-/* .btn-primary {
-    --bs-btn-color: #fff;
-    --bs-btn-bg: #0d6efd;
-    --bs-btn-border-color: #0d6efd;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #0b5ed7;
-    --bs-btn-hover-border-color: #0a58ca;
-    --bs-btn-focus-shadow-rgb: 49,132,253;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #0a58ca;
-    --bs-btn-active-border-color: #0a53be;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #0d6efd;
-    --bs-btn-disabled-border-color: #0d6efd;
-} */
+
 #contenedorP{
     /*height: 1200px;*/
     display: flex;
-    flex-direction: row;   /* column , row-reverse,  col-reverse*/
-    flex-wrap: wrap;  /* nowrap wrap wrap-reverse*/
-    justify-content: space-around ; /* center flex-start flex-end space-between (entre) space-around (alrededor)*/
-    align-content: space-around;  /* center flex-end flex-start space-around space-between*/
+    flex-direction: row;  
+    flex-wrap: wrap;  
+    justify-content: space-around ; 
+    align-content: space-around; 
 }
 /*ESTILO DE PAGINA SUCURSALES*/
 .sucursales{
     width: 100%;
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     text-align: center;
     margin: 10px 0px;
 }
@@ -443,6 +429,10 @@ div.card:hover {
 .sucursales p{
     font-style: normal;
 }
+.sucursales .sucursal{
+    display: grid;
+}
+
 /*ESTILO DE PAGINA LOGIN*/
 .login{
     background-color: rgb(22, 23, 23, 0.8);
