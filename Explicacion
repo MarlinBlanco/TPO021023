@@ -1,0 +1,18 @@
+Título del proyecto
+VINOTECA  “EL BODEGÓN”
+
+Temática
+Luego de los tiempos de pandemia que padecimos llevo a que nuestro usuario buscara nuevas alternativas de atraer a más clientes, es por eso que ideamos una página web  desarrollada con la intención de que el usuario tenga una nueva manera más cómoda y fácil de interactuar sus productos disponibles con el resto de su clientes, hemos desarrollado en una manera más práctica que a través de la pantalla su cliente lograra visualizar toda la información necesaria de la bodega a la hora de realizar un pedido no solo para clientes frecuentes sino al público en general.
+Consta de varios enlaces donde primeramente realizamos una muestreo general del producto estrella, para luego seguir con un enlace que deriva directamente al listado general de los productos del cliente con sus respectivas descripción, con el propósito de que nuestro cliente llegara a tener más de una sucursal ideamos el enlace disponible para sumar dichas sucursales
+Para garantizar la fidelidad de nuestro cliente hacia los suyos agregamos los enlaces para que los futuros usuarios tengan una manera de interactuar y luego poder crear un login para sumarlos a una base de datos como clientes frecuentes.
+
+Link del sitio
+Link de GitHub : 
+https://github.com/MarlinBlanco/TPO021023
+Link del archivo de texto con explicación del sitio *
+Comentarios del proyecto: 1) donde se encuentra la animación: se encuentra en el Home con una transición de imágenes como carousel.
+ 2) que pagina es responsiva:
+La página de productos
+3) que pagina tiene flexbox o grilla:
+La página de productos
+4) donde se consume la api, mas lo que considere necesario para la correccion del TP
